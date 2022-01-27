@@ -12,6 +12,9 @@ def read_root():
 def read_item(item_id: int):
     return {"item_id": item_id}
 
-@app.get("/go")
+@app.get("/fastFood")
 async def see():
-    return{"Message": "Works"}
+    return{
+        "Message": "Works",
+        "Time":"Now"
+            }
